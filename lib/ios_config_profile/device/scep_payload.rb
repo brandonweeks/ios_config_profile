@@ -23,6 +23,7 @@ module IOSConfigProfile
         # 'Key Usage' => 5,
 
         "PayloadType" => "com.apple.security.scep",
+        "PayloadUUID" => uuid,
         "PayloadVersion" => 1,
         "PayloadIdentifier" => "#{IOSConfigProfile.root_domain}.profile.scep",
         "PayloadDisplayName" => "Security",
