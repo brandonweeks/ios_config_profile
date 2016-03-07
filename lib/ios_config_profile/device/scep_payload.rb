@@ -14,13 +14,16 @@ module IOSConfigProfile
 
     def security_payload
       {
-        "URL" => url,
-        # 'Name' => '#{IOSConfigProfile.organization} SCEP Payload',
-        # 'Subject' => '',
-        # 'Challenge' => '',
-        # 'Keysize' => 1024,
-        # 'Key Type' => 'RSA',
-        # 'Key Usage' => 5,
+        'PayloadContent' => {
+          "URL" => url,
+          # 'Name' => '#{IOSConfigProfile.organization} SCEP Payload',
+          # 'Subject' => '',
+          # FIXME
+          'Challenge' => 'foobar',
+          # 'Keysize' => 1024,
+          # 'Key Type' => 'RSA',
+          # 'Key Usage' => 5,
+        },
 
         "PayloadType" => "com.apple.security.scep",
         "PayloadUUID" => uuid,

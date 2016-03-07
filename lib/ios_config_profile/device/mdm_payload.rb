@@ -5,7 +5,7 @@ module IOSConfigProfile
     attr_reader :url, :security_payload, :topic
 
     def initialize(url, security_payload, topic)
-      raise "url must be https" if url[0, 5] != "https"
+      #raise "url must be https" if url[0, 5] != "https"
       @url = url
       @security_payload = security_payload
       @topic = topic
